@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  background: rgb(91, 246, 79);
+  margin: 15px auto;
+}
+#container div {
+ width: 16px;
+ height: 16px;
+}
+#buttons {
+    text-align:center;
+}
+#buttons button {
+    margin: 2px;
+    font-size: 25px;
+}
+.snake {
+    background-color:blueviolet;
+}
+.fruit {
+    background-color: blueviolet;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+}
+.reward {
+    background-color: blue;
+    width: 16px;
+    height: 16px;
+}
+</style>
+<body>
+<div style="text-align: center;">
+  <button onclick="stopGame()">Stop Game</button>
+  <button onclick="restartGame()">Restart Game</button>
+  <p id="score">Your Score: 0</p>
+</div>
+<div style="text-align: center;">
+    <span style="font-size: 25px; font-weight: bold;">Level: </span>
+    <button onclick="easy()">easy</button>
+    <button onclick="normal()">normal</button>
+    <button onclick="hard()">hard</button>
+</div>
+<div id ="container">
+</div>
+<div id="buttons">
+  <button onclick="upMove()">Up Move</button>
+  <br>
+  <button onclick="leftMove()">Left Move</button>
+  <button onclick="rightMove()">Right Move</button>
+  <br>
+  <button onclick="downMove()">Down Move</button>
+</div>
+<script src="/index.js">
+</script>
+</body>
+</html>
